@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import Link from "next/link";
 import { useState } from "react";
 
@@ -10,7 +11,7 @@ export default function Header() {
   };
 
   return (
-    <div className="bg-slate-700 h-12">
+    <div className="bg-slate-700 h-12 sticky top-0 z-50">
       <div className="font-bold text-white flex justify-between items-center px-4">
         <h1 className="text-xl hover:text-red-700 mt-3">Hello World</h1>
         <button
@@ -48,7 +49,7 @@ export default function Header() {
         </ul>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden bg-slate-700">
+        <div className="md:hidden bg-slate-700 absolute w-full z-50">
           <ul className="flex flex-col gap-3 p-4">
             <li className="text-white font-bold">
               <Link href="/" className="hover:text-blue-600">Home</Link>

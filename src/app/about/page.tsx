@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function About() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-200 p-6">
@@ -16,9 +18,9 @@ export default function About() {
           </p>
         </div>
       </div>
-      <a href="/about/nested-rout">
+      <Link href="/about/nested-rout">
          <button className=" bg-blue-700 py-3 mt-3 text-yellow-200 px-2 font-mono">More Nested About</button>
-         </a>
+         </Link>
     </div>
   );
 }
